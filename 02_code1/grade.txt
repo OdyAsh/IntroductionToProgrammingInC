@@ -1,0 +1,15 @@
+Grading at Sun Jul  5 17:57:22 UTC 2020
+Checking code1.c for legal syntax
+temp.c: In function ‘hexToDec’:
+temp.c:14:24: error: implicit declaration of function ‘pow’ [-Werror=implicit-function-declaration]
+     dec +=(num % 10) * pow(16, i);
+                        ^
+temp.c:14:24: error: incompatible implicit declaration of built-in function ‘pow’ [-Werror]
+temp.c:14:24: note: include ‘<math.h>’ or provide a declaration of ‘pow’
+temp.c:17:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+The code did not have legal syntax!
+
+Overall Grade: F
