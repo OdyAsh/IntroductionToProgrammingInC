@@ -8,19 +8,13 @@ int max (int num1, int num2) {
   else return num2;
 }
 
-int hexToDec (int num) {
-  int dec = 0;
-  for (int i = 0 ; i < num ; i++) {
-    dec +=(num % 10) * pow(16, i);
-    num /= 10;
-  }
-}
 int main(void) {
   printf("max(42, -69) is %d\n", max(42, -69));
   printf("max(33, 0) is %d\n", max(33, 0));
   printf("max(0x123456, 123456) is %d\n", max(0x123456, 123456));
   //compute the max of 0x451215AF and 0x913591AF and print it out as a decimal number
-  printf("max(0x451215AF, 0x913591AF) is %d\n", max(0x451215AF, 0x913591AF));
+  long n1 = 0x451215AF, n2 = 0x913591AF;
+  printf("max(0x451215AF, 0x913591AF) is %d\n", max(n1, n2));
   return 0;
 }
 
