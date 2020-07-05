@@ -1,3 +1,5 @@
+#include <math.h>
+
 int max (int num1, int num2) {
   //check if num1 is greater than num2
     //if so, your answer is num1
