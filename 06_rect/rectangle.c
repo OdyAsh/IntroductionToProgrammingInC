@@ -30,6 +30,8 @@ rectangle canonicalize(rectangle r) {
 }
 rectangle intersection(rectangle r1, rectangle r2) {
   //WRITE THIS FUNCTION
+  r1 = canonicalize(r1);
+  r2 = canonicalize(r2);
   rectangle rInt;
   rInt.x = max(r1.x, r2.x);
   rInt.y = max(r1.y, r2.y);
