@@ -33,13 +33,27 @@ rectangle intersection(rectangle r1, rectangle r2) {
   r1 = canonicalize(r1);
   r2 = canonicalize(r2);
   rectangle rInt;
+  int r1fx = r1.x + r1.w, r1fy = r1.y + r1.h; 
+  int r2fx = r2.x + r2.w, r2fy = r2.y + r2.h;
+
+  if ((max(r1.x, r2.x) > min(r1fx, r2fx)) || (max(r1.y, r2.y) > min(r1fy, r2fy)) {
+    rInt.x = rInt.y = rInt.w = rInt.h = 0;
+    return rInt;
+  } 
+  
   rInt.x = max(r1.x, r2.x);
   rInt.y = max(r1.y, r2.y);
+  rInt.w = min(r1.w, r2.w) - rInt.x;
+  rInt.h = min(r1.h, r2.h) - rInt.y; 
+  return rInt;
+
+  /*
   if (r1.width <= r2.width) rInt.width = r1.width + r1.x - rInt.x;
   else rInt.width = r2.width + r2.x - rInt.x;
   if (r1.height <= r2.height) rInt.height = r1.height + r1.y - rInt.y;
   else rInt.height = r2.height + r2.y - rInt.y;
   return rInt;
+  */
 }
 
 //You should not need to modify any code below this line
