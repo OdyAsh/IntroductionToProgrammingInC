@@ -1,18 +1,6 @@
-Grading at Thu Jul  9 16:53:31 UTC 2020
+Grading at Thu Jul  9 16:56:00 UTC 2020
 Attempting to compile rectangle.c
 rectangle.c: In function ‘intersection’:
-rectangle.c:36:23: error: ‘rectangle {aka struct rect}’ has no member named ‘w’
-   int r1fx = r1.x + r1.w, r1fy = r1.y + r1.h; 
-                       ^
-rectangle.c:36:43: error: ‘rectangle {aka struct rect}’ has no member named ‘h’
-   int r1fx = r1.x + r1.w, r1fy = r1.y + r1.h; 
-                                           ^
-rectangle.c:37:23: error: ‘rectangle {aka struct rect}’ has no member named ‘w’
-   int r2fx = r2.x + r2.w, r2fy = r2.y + r2.h;
-                       ^
-rectangle.c:37:43: error: ‘rectangle {aka struct rect}’ has no member named ‘h’
-   int r2fx = r2.x + r2.w, r2fy = r2.y + r2.h;
-                                           ^
 rectangle.c:39:82: error: expected ‘)’ before ‘{’ token
    if ((max(r1.x, r2.x) > min(r1fx, r2fx)) || (max(r1.y, r2.y) > min(r1fy, r2fy)) {
                                                                                   ^
