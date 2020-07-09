@@ -37,7 +37,7 @@ rectangle intersection(rectangle r1, rectangle r2) {
   int r2fx = r2.x + r2.width, r2fy = r2.y + r2.height;
 
   if ((max(r1.x, r2.x) > min(r1fx, r2fx)) || (max(r1.y, r2.y) > min(r1fy, r2fy)))) {
-    rInt.x = rInt.y = rInt.w = rInt.h = 0;
+    rInt.x = rInt.y = rInt.width = rInt.height = 0;
     return rInt;
   } 
   
