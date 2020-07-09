@@ -1,15 +1,9 @@
-Grading at Thu Jul  9 16:57:13 UTC 2020
+Grading at Thu Jul  9 16:58:23 UTC 2020
 Attempting to compile rectangle.c
 rectangle.c: In function ‘intersection’:
 rectangle.c:39:82: error: expected statement before ‘)’ token
    if ((max(r1.x, r2.x) > min(r1fx, r2fx)) || (max(r1.y, r2.y) > min(r1fy, r2fy)))) {
                                                                                   ^
-rectangle.c:40:27: error: ‘rectangle {aka struct rect}’ has no member named ‘w’
-     rInt.x = rInt.y = rInt.w = rInt.h = 0;
-                           ^
-rectangle.c:40:36: error: ‘rectangle {aka struct rect}’ has no member named ‘h’
-     rInt.x = rInt.y = rInt.w = rInt.h = 0;
-                                    ^
 The code did not compile!
 
 Overall Grade: F
